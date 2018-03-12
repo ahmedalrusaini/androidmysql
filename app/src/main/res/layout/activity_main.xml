@@ -10,20 +10,18 @@
     >
 
 
-
     <TextView
-        android:id="@+id/id_text_view1"
+        android:id="@+id/id_txt1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="android studio"
-        android:textAlignment="center"
-        />
+        android:text="@string/android_studio"
+        android:textAlignment="center" />
 
     <TextView
-        android:id="@+id/id_text_view2"
+        android:id="@+id/id_txt2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=" is best IDE" />
+        android:text="@string/is_best_ide" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -31,9 +29,10 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/id_plus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="btn"/>
+                android:text="@string/plus"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -52,23 +51,18 @@
             android:orientation="horizontal">
 
             <EditText
+                android:id="@+id/id_edit1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="enter username"
+                android:hint="@string/enter_value_1"
                 android:textSize="20px"
                 />
 
             <EditText
+                android:id="@+id/id_edit2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="enter password"
-                android:textSize="20px"
-                />
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="enter password"
+                android:hint="@string/enter_value_2"
                 android:textSize="20px"
                 />
 
@@ -80,6 +74,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/id_txt3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/android_mysql"
@@ -89,7 +84,8 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="btn"/>
+            android:text="@string/concat"
+            android:onClick="concat"/>
 
     </LinearLayout>
 
