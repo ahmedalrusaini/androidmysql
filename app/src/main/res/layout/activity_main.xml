@@ -34,15 +34,45 @@
                 android:layout_height="wrap_content"
                 android:text="@string/plus"/>
 
-            <Button
+            <ToggleButton
+                android:id="@+id/tgl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="btn"/>
+                android:textOn="@string/is_on"
+                android:textOff="@string/is_off"
+                android:onClick="tglchange"
+                />
 
-            <Button
-                android:layout_width="match_parent"
+            <Switch
+                android:id="@+id/id_swich"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="btn"/>
+                android:textOn="visible"
+                android:textOff="gone"
+                />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/id_radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="visible"
+                    android:onClick="radchange"/>
+
+                <RadioButton
+                    android:id="@+id/id_radio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="gone"
+                    android:onClick="radchange"/>
+
+            </RadioGroup>
+
+
         </LinearLayout>
 
         <LinearLayout
@@ -82,10 +112,19 @@
             />
 
         <Button
+            android:id="@+id/id_btn_concat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/concat"
-            android:onClick="concat"/>
+            android:onClick="concat"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/go_to_page_page2"
+            android:onClick="gotopage2"
+            />
 
     </LinearLayout>
 
