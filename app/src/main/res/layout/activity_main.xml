@@ -47,8 +47,8 @@
                 android:id="@+id/id_swich"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textOn="visible"
-                android:textOff="gone"
+                android:textOn="@string/visible"
+                android:textOff="@string/gone"
                 />
 
             <RadioGroup
@@ -60,14 +60,14 @@
                     android:id="@+id/id_radio1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="visible"
+                    android:text="@string/visible"
                     android:onClick="radchange"/>
 
                 <RadioButton
                     android:id="@+id/id_radio2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="gone"
+                    android:text="@string/gone"
                     android:onClick="radchange"/>
 
             </RadioGroup>
@@ -124,6 +124,14 @@
             android:layout_height="wrap_content"
             android:text="@string/go_to_page_page2"
             android:onClick="gotopage2"
+            />
+
+        <Button
+            android:textColor="@color/colortow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sqlite"
+            android:onClick="sqlite"
             />
 
     </LinearLayout>

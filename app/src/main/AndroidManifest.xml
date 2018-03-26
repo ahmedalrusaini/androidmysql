@@ -17,7 +17,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".Main2Activity" />
-        <activity android:name=".ViewAllInfo"></activity>
+        <activity android:name=".ViewAllInfo" />
+        <activity android:name=".SQLiteProcesses" />
+        <activity android:name=".update" />
+        <activity android:name=".delete" />
+        <activity android:name=".search"></activity>
     </application>
 
 </manifest>

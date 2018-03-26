@@ -97,4 +97,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this,Main2Activity.class));
     }
 
+    public void sqlite(View view){
+        startActivity(new Intent(this,SQLiteProcesses.class));
+    }
+
 }
