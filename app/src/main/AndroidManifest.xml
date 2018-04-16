@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.user.androidmysql">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,7 +23,9 @@
         <activity android:name=".SQLiteProcesses" />
         <activity android:name=".update" />
         <activity android:name=".delete" />
-        <activity android:name=".search"></activity>
+        <activity android:name=".search" />
+        <activity android:name=".MySQLProcesses" />
+        <activity android:name=".insertMysql"></activity>
     </application>
 
 </manifest>

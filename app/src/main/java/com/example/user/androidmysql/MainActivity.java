@@ -101,4 +101,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this,SQLiteProcesses.class));
     }
 
+    public void mysql(View view) {
+        startActivity(new Intent(this,MySQLProcesses.class));
+    }
 }
